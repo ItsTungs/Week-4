@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Tugas 3</title>
+	<style>
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			opacity: 1;
+			transition: opacity 0.5s ease-in-out;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+    <script>
+		$(document).ready(function() {
+			$('#fadeOutBtn').click(function() {
+				$('.kotak').fadeOut(1000);
+			});
+
+			$('#fadeInBtn').click(function() {
+				$('.kotak').fadeIn(1000);
+			});
+
+			$('#fadeToBtn').click(function() {
+				$('.kotak').fadeTo(500, 0.3);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="kotak"></div>
+	<button id="fadeOutBtn">Fade Out</button>
+	<button id="fadeInBtn">Fade In</button>
+	<button id="fadeToBtn">Fade To 0.3</button>
+</body>
+</html>

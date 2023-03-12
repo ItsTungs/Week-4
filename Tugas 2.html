@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Tugas 2</title>
+	<style>
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: rgb(146, 170, 130);
+			margin: 10px;
+			float: left;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.box').dblclick(function() {
+				if ($(this).css('background-color') === 'rgb(146, 170, 130)') {
+					$(this).css('background-color', 'blue');
+				} else {
+					$(this).css('background-color', 'rgb(146, 170, 130)');
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</body>
+</html>
